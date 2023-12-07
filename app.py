@@ -45,7 +45,7 @@ def main():
         bucket_name = DEFAULT_BUCKET_NAME
 
         # Get custom file name from user input
-        custom_file_name = "flujo"
+        custom_file_name = "webtestst"
 
         # Use the custom file name in the object key
         if custom_file_name:
