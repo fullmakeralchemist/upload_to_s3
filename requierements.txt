@@ -1,2 +1,0 @@
-git+https://github.com/gatagat/lap@new-packaging
-boto3==1.11.0
