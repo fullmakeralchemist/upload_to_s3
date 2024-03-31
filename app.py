@@ -9,7 +9,7 @@ AWS_ACCESS_KEY_ID = st.secrets["aws_access_key_id"]
 AWS_SECRET_ACCESS_KEY = st.secrets["aws_secret_access_key"]
 
 # Replace 'your_bucket_name' with your actual S3 bucket name
-DEFAULT_BUCKET_NAME = 'data-lake-traxion-pruebas'
+DEFAULT_BUCKET_NAME = 'sensorsdatav1'
 
 # Function to upload a file to S3
 def upload_to_s3(file_path, bucket_name, object_name):
@@ -45,11 +45,11 @@ def main():
         bucket_name = DEFAULT_BUCKET_NAME
 
         # Get custom file name from user input
-        custom_file_name = "webtestst"
+        custom_file_name = "datos_sensor"
 
         # Use the custom file name in the object key
         if custom_file_name:
-            object_name = f"st0-raw/streamlit/{custom_file_name}.csv"
+            object_name = f"users/user1/{custom_file_name}.csv"
         else:
             st.warning("Por favor, ingrese un nombre de archivo personalizado.")
 
